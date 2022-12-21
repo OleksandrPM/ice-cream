@@ -1,0 +1,21 @@
+// .menu-toggle {
+// background-color: inherit;
+// border: none;
+
+// transition-duration: map-get($transitions, 'normal-transition-duration');
+// transition-timing-function: map-get(
+//   $transitions,
+//   'normal-transition-timing-function'
+// );
+// transition-property: fill;
+
+// &:hover,
+// &:focus {
+//   fill: map-get($colors, 'brand-color');
+// }
+
+// // Tablet & desktop styles
+// @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+//   display: none;
+// }
+// }

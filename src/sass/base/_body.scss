@@ -1,0 +1,9 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.page {
+  font-family: var(--main-font-family), sans-serif;
+  font-size: 12px;
+  color: var(--main-text-color);
+
+  background-color: var(--background-color);
+}

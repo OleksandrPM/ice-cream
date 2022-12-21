@@ -1,0 +1,67 @@
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   padding: 40px;
+
+//   // Phone & tablet styles
+//   @media screen and (max-width: calc(map-get($breakpoints, 'desktop') - 0.02px)) {
+//     width: 95%;
+//     max-width: 450px;
+//     height: 95%;
+//     max-height: 609px;
+
+//     @media screen and (max-height: 608.98px) {
+//       overflow: scroll;
+//     }
+//   }
+
+//   // Desktop styles
+//   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+//     width: 528px;
+//   }
+
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   background-color: map-get($colors, 'clear-white-color');
+// }
+
+// .modal__close-button {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+
+//   width: 30px;
+//   height: 30px;
+//   padding: 0;
+
+//   align-items: center;
+//   justify-content: center;
+
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   background-color: map-get($colors, 'clear-white-color');
+
+//   transition-duration: map-get($transitions, 'normal-transition-duration');
+//   transition-timing-function: map-get(
+//     $transitions,
+//     'normal-transition-timing-function'
+//   );
+//   transition-property: fill;
+
+//   &:hover,
+//   &:focus {
+//     fill: map-get($colors, 'brand-color');
+//   }
+// }
+
+// .modal__title {
+//   margin-bottom: 12px;
+
+//   font-size: 20px;
+//   line-height: 1.5;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+// }

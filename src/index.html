@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+
+    <title>IceCream</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon/icecream-icon.ico" sizes="any" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local Styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+
+  <body class="page">
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/rewiews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+
+    <include src="./partials/footer.html"></include>
+
+    <include src="./partials/mobile-menu.html"></include>
+
+    <include src="./partials/ingredients.html"></include>
+
+    <include src="./partials/product-card.html"></include>
+
+    <include src="./partials/read-more.html"></include>
+
+    <include src="./partials/location.html"></include>
+
+    <include src="./partials/franchise.html"></include>
+
+    <!-- Scripts -->
+    <!-- Mobile menu scripts -->
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+    <!-- Modal window script -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
