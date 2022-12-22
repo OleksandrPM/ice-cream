@@ -1,0 +1,73 @@
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: top 32px;
+
+  background-image: url(../images/background/gallery/mobile/img.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background/gallery/mobile/img@2x.jpg);
+  }
+
+  // Tablet styles
+  @media screen and (min-width: 768px) {
+    max-width: var(--tablet-width);
+
+    background-image: url(../images/background/gallery/tablet/img.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/gallery/tablet/img@2x.jpg);
+    }
+  }
+
+  // Desktop styles
+  @media screen and (min-width: 1200px) {
+    max-width: var(--desktop-width);
+
+    background-image: url(../images/background/gallery/desktop/img.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/gallery/desktop/img@2x.jpg);
+    }
+  }
+}
+
+.gallery__container {
+  position: relative;
+  margin: auto;
+
+  // Tablet styles
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  // Desktop styles
+  @media screen and (min-width: 1200px) {
+    padding-left: 94px;
+    padding-right: 94px;
+  }
+}
+
+.gallery__image {
+  width: 100%;
+  border-radius: 8px;
+
+  // Tablet styles
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  // Desktop styles
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+}
