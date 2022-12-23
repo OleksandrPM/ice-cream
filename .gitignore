@@ -105,10 +105,4 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
-# TernJS port file
-.tern-port
-src/images/advantages/cow.png
-src/images/advantages/ice.png
-src/images/advantages/weight.png
-src/sass/index.css
-src/sass/index.css.map
+
