@@ -1,6 +1,5 @@
 .about {
   padding-top: 61px;
-  padding-bottom: 50px;
 
   // Tablet screen
   @media screen and (min-width: 768px) {
@@ -116,10 +115,6 @@
         top: 39px;
     }
 }
-
-.text__wrapper {
-    margin-bottom: 10px;
-}
     
 .about__text {
     margin-left: auto;
@@ -137,13 +132,35 @@
     }
 
     &:nth-child(2) {
+        margin-bottom: 10px;
         line-height: 1.58;
         letter-spacing: normal;
     }
 
-    &:last-child {
+    &:nth-child(3) {
         @media screen and (max-width: 767.98px) {
                 display: none;
     }
   }
+}
+
+.about__btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 35px;
+    padding-left: 34px;
+    
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: var(--button-text-color);
+    background-color: var(--brand-color);
+    border-radius: 10px;
+    border: none;
 }

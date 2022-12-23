@@ -20,6 +20,7 @@
 
     <!-- Local Styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
+
     <script type="module" src="./index.js"></script>
   </head>
 
@@ -31,9 +32,11 @@
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/rewiews.html"></include>
-      <include src="./partials/contacts.html"></include>
+      <div class="joint-background">
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/reviews.html"></include>
+        <include src="./partials/contacts.html"></include>
+      </div>
     </main>
 
     <include src="./partials/footer.html"></include>
@@ -51,8 +54,15 @@
     <include src="./partials/franchise.html"></include>
 
     <!-- Scripts -->
+
+    <!-- Gallery slide script -->
+    <!-- <script src="./js/gallery-slide.js"></script> -->
+
+    <!-- Reviews slick script -->
+    <script src="./js/reviews-slick.js"></script>
+
     <!-- Mobile menu scripts -->
-    <!-- <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
