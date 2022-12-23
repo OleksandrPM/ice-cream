@@ -16,16 +16,16 @@
     font-size: 16px;
   }
   &__list {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 280px;
-    grid-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     @media screen and (min-width: 768px) {
-      grid-template-columns: 224px 224px 224px;
+      flex-direction: row;
+      justify-content: center;
     }
     @media screen and (min-width: 1200px) {
-      grid-template-columns: 366px 366px 366px;
-      grid-gap: 32px;
+      gap: 32px;
     }
   }
   &__item {
