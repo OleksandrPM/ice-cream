@@ -1,9 +1,5 @@
 
-    .container {
-        max-width: 480px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+   
       
  
  .list {
@@ -12,13 +8,15 @@
      margin: 0;
  }
  .advantages {
-     
-     margin-left: auto;
-     margin-right: auto;
-     padding-bottom: 64px; /* для секції*/
-     padding-top: 50px; /* для секції, якщо не закладений в about*/
-     color: var(--inverse-text-color);
-     background: var(--background-color);
+    max-width: 480px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 64px; /* для секції*/
+    padding-top: 50px; /* для секції, якщо не закладений в about*/
+    color: var(--inverse-text-color);
+    background: var(--background-color);
  }
  
  
@@ -83,7 +81,7 @@
     
    @media screen and (min-width: 768px) {
          
-         .container {
+    .advantages {
              min-width: 100vw;
              padding-bottom: 204px; /* для секції*/
              padding-top: 60px; /* для секції, якщо не закладений в about*/
@@ -124,7 +122,7 @@
      }
    
      @media screen and (min-width: 1200px) {
-       .container {
+       .advantages {
          
          padding-bottom: 178px; /* для секції*/
          
