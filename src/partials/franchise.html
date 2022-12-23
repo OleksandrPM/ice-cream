@@ -1,4 +1,4 @@
-<!-- <div class="backdrop">
+<div class="backdrop">
   <div class="modal">
     <button class="modal__close-button">
         <svg class="" width="" height="">
@@ -14,21 +14,21 @@
     </p>
     <form class="modal__form">
         <div class="modal__form-item">
-          <input type="text" name="modal-name" placeholder=" " id="name" class="modal__input" />
+          <input type="text" name="modal-name" pattern="[A-Za-z]{4,8}" placeholder=" " id="name" class="modal__input" />
           <label class="modal__placeholder">Name</label>
             
           
         </div>
 
         <div class="modal__form-item">
-          <input type="text" name="modal-tel" placeholder=" " class="modal__input" />
+          <input type="text" name="modal-tel" pattern="[0-9]{10}" placeholder=" " class="modal__input" />
           <label class="modal__placeholder">Phone</label>
             
           
         </div>
 
         <div class="modal__form-item">
-          <input type="text" name="modal-email" placeholder=" " class="modal__input" />
+          <input type="text" name="modal-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" " class="modal__input" />
           <label class="modal__placeholder">Email</label>
             
           
@@ -46,4 +46,4 @@
         </button>
       </form>
 </div>
-</div> -->
+</div>
