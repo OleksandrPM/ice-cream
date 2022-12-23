@@ -1,0 +1,118 @@
+.about {
+  padding-top: 61px;
+  padding-bottom: 50px;
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.about__label {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--inverse-text-color);
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+
+  font-family: var(--secondary-font-family);
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--inverse-text-color);
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+    width: 456px;
+
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 82px;
+    width: 483px;
+
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.img__wrapper {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 62px;
+    width: 279px;
+    height: 278px;
+
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 140px;
+
+    // Tablet screen
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        width: 330px;
+        height: 330px;
+
+        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+        border-radius: 165px;
+    }
+
+    // Desctop screen
+    @media screen and (min-width: 1200px) {
+        width: 490px;
+        height: 490px;
+
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        border-radius: 250px;
+    }
+}
+
+.about__img {
+    position: absolute;
+    top: 22px;
+
+    border-radius: 50%;
+
+    // Tablet screen
+    @media screen and (min-width: 768px) {
+        top: 26px;
+    }
+
+    // Desctop screen
+    @media screen and (min-width: 1200px) {
+        top: 39px;
+    }
+}
