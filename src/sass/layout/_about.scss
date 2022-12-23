@@ -116,3 +116,34 @@
         top: 39px;
     }
 }
+
+.text__wrapper {
+    margin-bottom: 10px;
+}
+    
+.about__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--inverse-text-color);
+
+    &:first-child {
+        margin-bottom: 4px;
+    }
+
+    &:nth-child(2) {
+        line-height: 1.58;
+        letter-spacing: normal;
+    }
+
+    &:last-child {
+        @media screen and (max-width: 767.98px) {
+                display: none;
+    }
+  }
+}
