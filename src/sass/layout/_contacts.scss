@@ -184,10 +184,10 @@
   &--locations {
     background: var(--brand-color);
     &:hover {
-      background: #0a8817;
+      background: var(--button-hover-color);
     }
     &:focus {
-      background: #0a8817;
+      background: var(--button-hover-color);
       color: var(--button-text-inverse-color);
     }
     &:disabled {
@@ -198,10 +198,10 @@
     background: none;
     border: 2px solid var(--brand-color);
     &:hover {
-      border: 2px solid #0a8817;
+      border: 2px solid var(--button-hover-color);
     }
     &:focus {
-      border: 2px solid #0a8817;
+      border: 2px solid var(--button-hover-color);
       color: var(--button-text-inverse-color);
     }
     &:disabled {
