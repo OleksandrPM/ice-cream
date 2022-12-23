@@ -668,5 +668,10 @@
             </path>
         </symbol>
 
+        <!-- Button -->
+            <symbol id="btn-arrow" viewBox="0 0 32 32">
+            
+        </symbol>
+
     </defs>
 </svg>
