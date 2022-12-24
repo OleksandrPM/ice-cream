@@ -1,0 +1,96 @@
+<section class="hero setion">
+  <div class="container hero__container">
+    <div class="hero__left-side">
+      <div class="hero__group">
+        <h1 class="hero__title">ice cream made with passion</h1>
+        <div class="hero__box">
+          <button class="hero__btn">Products</button>
+          <a href="" class="hero__link">How it’s made?</a>
+        </div>
+      </div>
+      <div class="hero__descr">
+        <picture>
+          <!-- desktop screen  -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/ice-creams/desk_@1x.webp 1x,
+              ./images/hero/ice-creams/desk_@2x.webp 2x
+            "
+            loading="lazy"
+            type="image/webp"
+          />
+          <!-- tablet screen  -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/ice-creams/tab_@1x.webp 1x,
+              ./images/hero/ice-creams/tab_@2x.webp 2x
+            "
+            loading="lazy"
+            type="image/webp"
+          />
+
+          <img src="./images/hero/ice-creams/desk-ice-creams.png" alt="ice creams" width="225" height="225"/>
+        </picture>
+        
+        <div class="hero__text">
+          <p class="item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <svg class="hero__icon" width="40" height="16">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero__right-side">
+      <picture>
+        <!-- desktop screen  -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+              ./images/hero/ice-cream/desk_@1x.webp 1x,
+              ./images/hero/ice-cream/desk_@2x.webp 2x
+            "
+          loading="lazy"
+          type="image/webp"
+        />
+        <!-- tablet screen  -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+              ./images/hero/ice-cream/tab_@1x.webp 1x,
+              ./images/hero/ice-cream/tab_@2x.webp 2x
+            "
+          loading="lazy"
+          type="image/webp"
+        />
+        <!-- phone screen  -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+              ./images/hero/ice-cream/mob_@1x.webp 1x,
+              ./images/hero/ice-cream/mob_@2x.webp 2x
+            "
+          loading="lazy"
+          type="image/webp"
+        />
+        <img
+          src="./images/hero/ice-cream/desk-ic.png"
+          alt="Ice Cream"
+          width="456"
+          height="560"
+        />
+      </picture>
+      
+      <div class="hero__features">
+        <p class="hero__numbers">16</p>
+        <p class="hero__features-text item">cafes</p>
+        <p class="hero__numbers">23</p>
+        <p class="hero__features-text">food trucks</p>
+      </div>
+    </div>
+  </div>
+</section>
