@@ -71,10 +71,15 @@
   margin-top: 0;
 }
 .modal__video {
-  position: relative;
-  min-width: 220px; // 220 тому що 280 - 28-28- 2 - 2
+  
+  min-width:220px;
   min-height: 199px;
-  background: var(--main-text-color);
+  
+}
+.video  {
+  position: relative;
+  width: 220px;
+  height: 199px;
   border-radius: 10px;
 }
 
@@ -91,7 +96,7 @@
   color: var(--main-text-color);
 }
 
-.play-btn {
+/*.play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,7 +111,7 @@
 
   align-items: center;
   justify-content: center;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .modal {
@@ -128,5 +133,9 @@
   }
   .modal__video {
     max-width: 444px; //568 - 2-2-60-60
+  }
+  .video  {
+    width: 444px;
+    height: 205px;
   }
 }
