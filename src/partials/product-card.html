@@ -1,0 +1,149 @@
+<!-------------------- modal product card -------------------->
+<div class="product-card__backdrop is-hidden" data-modal>
+  <div class="modal" data-modal-window>
+    <button class="close__btn" data-modal-close>
+      <svg class="close__icon" width="20" height="20">
+        <use href="./images/icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <strong class="product-card__title">Buy now</strong>
+    <ul class="product-card__list">
+      <li class="product-card__item">
+        <label>
+          <input
+            class="visually-hidden"
+            type="checkbox"
+            name="product"
+            value="ice_cream"
+          />
+          <div class="product-card__description ice-cream">
+            <div class="product-card__thumb ice-cream">
+              <picture class="product-card__pic">
+                <source
+                  srcset="
+                    ./images/products_card/img_mob@1x-1.jpg 1x,
+                    ./images/products_card/img_mob@2x-1.jpg 2x
+                  "
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+                <img
+                  class="product-card__img"
+                  src="./images/products_card/img_mob@1x-1.jpg"
+                  alt="ice_cream"
+                />
+              </picture>
+            </div>
+            <h2 class="product-card__text">Ice cream</h2>
+          </div>
+        </label>
+      </li>
+      <li class="product-card__item">
+        <label>
+          <input
+            class="visually-hidden"
+            type="checkbox"
+            name="product"
+            value="ice_coffee"
+          />
+          <div class="product-card__description ice-coffee">
+            <div class="product-card__thumb ice-coffee">
+              <picture class="product-card__pic">
+                <source
+                  srcset="
+                    ./images/products_card/img_mob@1x-2.jpg 1x,
+                    ./images/products_card/img_mob@2x-2.jpg 2x
+                  "
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+                <img
+                  class="product-card__img"
+                  src="./images/products_card/img_mob@1x-2.jpg"
+                  alt="ice_coffee"
+                />
+              </picture>
+            </div>
+            <h2 class="product-card__text">Ice coffee</h2>
+          </div>
+        </label>
+      </li>
+      <li class="product-card__item">
+        <label>
+          <input
+            class="visually-hidden"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          />
+          <div class="product-card__description milkshake">
+            <div class="product-card__thumb milkshake">
+              <picture class="product-card__pic">
+                <source
+                  srcset="
+                    ./images/products_card/img_mob@1x-3.jpg 1x,
+                    ./images/products_card/img_mob@2x-3.jpg 2x
+                  "
+                  type="image/jpeg"
+                  loading="lazy"
+                />
+                <img
+                  class="product-card__img"
+                  src="./images/products_card/img_mob@1x-3.jpg"
+                  alt="milkshake"
+                />
+              </picture>
+            </div>
+            <h2 class="product-card__text">Milkshake</h2>
+          </div>
+        </label>
+      </li>
+    </ul>
+    <form
+      class="product-card__form"
+      name="modal_form"
+      action="javascript:void(0);"
+    >
+      <div class="product-card__group" role="group">
+        <label class="form__label" for="user_name"></label>
+        <div class="form__wrapper">
+          <input
+            class="form__field"
+            type="text"
+            name="user_name"
+            id="user_name"
+            minlength="3"
+            required
+            placeholder="Name"
+            pattern="a-zA-Z0-9_@.\-"
+          />
+        </div>
+        <label class="form__label" for="user_phone"></label>
+        <div class="form__wrapper">
+          <input
+            class="form__field"
+            type="tel"
+            name="user_phone"
+            id="user_phone"
+            minlength="10"
+            required
+            placeholder="Phone"
+            pattern="0-9.\+"
+          />
+        </div>
+        <label class="form__label" for="user_comment"></label>
+        <textarea
+          class="form__comment"
+          name="user_comment"
+          id="user_comment"
+          rows="5"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="submit__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="./js/modal.js"></script>

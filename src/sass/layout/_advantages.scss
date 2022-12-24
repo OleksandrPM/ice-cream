@@ -4,7 +4,7 @@
   padding-right: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 64px; /* для секції*/
+  padding-bottom: 32px; /* для секції*/
   padding-top: 50px; /* для секції, якщо не закладений в about*/
   color: var(--inverse-text-color);
   background: var(--background-color);
@@ -40,13 +40,13 @@
   border-radius: 50%;
 }
 .advantages-item.icon-cow::before {
-  // background-image: url(../images/advantages/cow.png);
+  background-image: url(../images/advantages/cow.png);
 }
 .advantages-item.icon-weight::before {
-  // background-image: url(../images/advantages/weight.png);
+  background-image: url(../images/advantages/weight.png);
 }
 .advantages-item.icon-ice::before {
-  // background-image: url(../images/advantages/ice.png);
+  background-image: url(../images/advantages/ice.png);
 }
 .advantages-title {
   text-align: center;
@@ -61,14 +61,16 @@
   margin-left: auto;
   margin-bottom: 28px;
 
-  width: 270px;
+  width: 230px;
   text-align: center;
+  font-weight: 700;
+  line-height: 170%;
 }
 
 @media screen and (min-width: 768px) {
   .advantages {
     min-width: 100vw;
-    padding-bottom: 204px; /* для секції*/
+    padding-bottom: 60px; /* для секції*/
     padding-top: 60px; /* для секції, якщо не закладений в about*/
   }
   .advantages-list {
@@ -93,6 +95,7 @@
   .advantages-desc {
     width: 152px;
     font-size: 14px;
+    line-height: 174%;
     margin-bottom: 0;
   }
   .advantages-item::before {
@@ -102,7 +105,7 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    padding-bottom: 178px; /* для секції*/
+    padding-bottom: 80px; /* для секції*/
   }
   .advantages-list {
     margin-right: 16px;
@@ -119,6 +122,7 @@
   .advantages-desc {
     width: 368px;
     font-size: 16px;
+    line-height: 176%;
     margin-bottom: 0;
     letter-spacing: 0.02em;
   }

@@ -1,67 +1,168 @@
-// .modal {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   padding: 40px;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
-//   // Phone & tablet styles
-//   @media screen and (max-width: calc(map-get($breakpoints, 'desktop') - 0.02px)) {
-//     width: 95%;
-//     max-width: 450px;
-//     height: 95%;
-//     max-height: 609px;
+  width: 100%;
+  height: 100%;
 
-//     @media screen and (max-height: 608.98px) {
-//       overflow: scroll;
-//     }
-//   }
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--transition);
 
-//   // Desktop styles
-//   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
-//     width: 528px;
-//   }
+  /* Приховування коли вікно неактивне */
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 4px;
-//   background-color: map-get($colors, 'clear-white-color');
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 28px;
+
+  background: #fcfcfc;
+  border: 2px solid var(--brand-color);
+  border-radius: 10px;
+
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  align-content: center;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 480.1px) {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  background: none;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+}
+
+.modal__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__text {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  color: var(--main-text-color);
+}
+
+.modal__form {
+  margin: 24px auto 0;
+  max-width: 224px;
+
+  @media screen and (min-width: 480.1px) {
+    max-width: 368px;
+  }
+}
+
+.modal__form-item {
+  position: relative;
+  margin: 0 auto 12px;
+  max-width: 100%;
+  height: 32px;
+}
+
+.modal__form-item--comment {
+  height: 64px;
+}
+
+.modal__placeholder {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--main-text-color);
+  transition: var(--normal-transition-duration);
+}
+
+.modal__input {
+  width: 100%;
+  height: 100%;
+
+  padding: 8px 12px 7px;
+
+  background: var(--background-input-color);
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+}
+
+.modal__input:focus + .modal__placeholder,
+.modal__input:not(:placeholder-shown) + .modal__placeholder {
+  font-size: 10px;
+  line-height: 12px;
+  transform: translate(-20%, -160%);
+}
+
+// input:invalid {
+//     background-color: red;
 // }
 
-// .modal__close-button {
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
+.modal__button {
+  margin: 24px auto 0;
+  width: 114px;
+  height: 42px;
+  max-width: 100%;
 
-//   width: 30px;
-//   height: 30px;
-//   padding: 0;
+  background: var(--brand-color);
+  border-radius: 10px;
+  border: 0;
+}
 
-//   align-items: center;
-//   justify-content: center;
+.modal__button-text {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--main-text-color);
+}
 
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   border-radius: 50%;
-//   background-color: map-get($colors, 'clear-white-color');
+.modal__map {
+  max-width: 224px;
+  max-height: 199px;
 
-//   transition-duration: map-get($transitions, 'normal-transition-duration');
-//   transition-timing-function: map-get(
-//     $transitions,
-//     'normal-transition-timing-function'
-//   );
-//   transition-property: fill;
-
-//   &:hover,
-//   &:focus {
-//     fill: map-get($colors, 'brand-color');
-//   }
-// }
-
-// .modal__title {
-//   margin-bottom: 12px;
-
-//   font-size: 20px;
-//   line-height: 1.5;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-// }
+  @media screen and (min-width: 480.1px) {
+    max-width: 448px;
+    max-height: 260px;
+  }
+}
