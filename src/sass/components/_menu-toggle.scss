@@ -71,11 +71,15 @@
   list-style: none;
   text-align: center;
   &__btn {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
     margin-top: auto;
     max-width: 152px;
     padding: 12px 36px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 600;
     font-size: 14px;
     line-height: calc(18 / 14);
     border: transparent;
@@ -87,10 +91,6 @@
     }
     &:focus {
       color: var(--button-text-inverse-color);
-    }
-
-    &__span {
-      margin-left: 4px;
     }
   }
   &__link.current-page {
@@ -122,5 +122,5 @@
   fill: currentColor;
 }
 .current-page {
-  color: var(--main-text-color);
+  color: var(--brand-color);
 }

@@ -20,5 +20,7 @@
   // Desktop styles
   @media screen and (min-width: 1200px) {
     width: var(--desktop-width);
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

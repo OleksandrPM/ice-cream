@@ -23,12 +23,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 14px;
     }
     &__btn {
-      display: block;
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
       min-width: 152px;
       padding: 12px 36px;
       margin-left: 32px;
+      font-weight: 600;
       font-size: 14px;
       line-height: calc(18 / 14);
       border: transparent;
@@ -41,23 +45,21 @@
       &:focus {
         color: var(--button-text-inverse-color);
       }
-
-      &__span {
-        margin-left: 4px;
-      }
     }
   }
-
+ 
   @media screen and (min-width: 1200px) {
     padding-top: 8px;
     &__container {
       width: 1200px;
       display: flex;
       align-items: center;
-    }
+     }
   }
 }
-
+.btn__icon--header {
+fill: currentColor;
+}
 .nav {
   display: none;
 
@@ -85,9 +87,7 @@
     @media screen and (min-width: 481px) {
       padding-top: 32px;
       padding-bottom: 13px;
-      font-size: 14px;
-      line-height: calc(16 / 14);
-    }
+     }
   }
 }
 .logo__svg {
