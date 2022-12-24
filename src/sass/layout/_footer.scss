@@ -92,6 +92,7 @@
 
 .socials__icon {
   fill: var(--background-color);
+  transition: fill var(--normal-transition-duration);
 
   &:hover,
   &:focus {
