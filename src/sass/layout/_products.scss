@@ -1,10 +1,9 @@
 .product__section {
+  //   Delete after correcting
+  background-color: beige;
+
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 61px;
-  padding-right: 20px;
-  padding-bottom: 60px;
-  padding-left: 20px;
 
   background-image: url('../images/products/background_sm@1x.png');
   @media (min-device-pixel-ratio: 2),
@@ -12,8 +11,6 @@
     (min-resolution: 2dppx) {
     background-image: url('../images/products/background_sm@2x.png');
   }
-  //   Delete after correcting
-  background-color: beige;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -29,10 +26,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-right: 32px;
-    padding-left: 32px;
-
     background-image: url('../images/products/background_lg@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -40,19 +33,17 @@
       background-image: url('../images/products/background_lg@2x.png');
     }
   }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
 }
 
 .product__container {
   max-width: 100%;
   margin: 0 auto;
+  padding-top: 61px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    padding-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -76,6 +67,7 @@
     line-height: calc(37 / 30);
   }
 }
+
 .product__title {
   margin-bottom: 148px;
 
@@ -98,6 +90,7 @@
     line-height: calc(45 / 36);
   }
 }
+
 .product__list {
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +104,7 @@
     gap: 29px;
   }
 }
+
 .product__item {
   display: flex;
   flex-basis: 280px;
@@ -129,10 +123,12 @@
     min-height: 536px;
   }
 }
+
 .product__item-green {
   position: relative;
   background-color: #aec6a5;
 }
+
 .product__item-green::before {
   content: ' ';
   background-color: rgba(156, 190, 143, 0.7);
@@ -167,10 +163,12 @@
     }
   }
 }
+
 .product__item-yellow {
   position: relative;
   background-color: #efd478;
 }
+
 .product__item-yellow::before {
   content: ' ';
   background-color: rgba(248, 210, 78, 0.7);
@@ -205,10 +203,12 @@
     }
   }
 }
+
 .product__item-pink {
   position: relative;
   background-color: #d6936d;
 }
+
 .product__item-pink::before {
   content: ' ';
   background-color: rgba(213, 117, 63, 0.7);
@@ -243,9 +243,11 @@
     }
   }
 }
+
 .product__card {
   flex-grow: 1;
 }
+
 .product__undertitle {
   margin-top: 123px;
   margin-bottom: 40px;
@@ -270,6 +272,7 @@
     line-height: calc(37 / 30);
   }
 }
+
 .product__text {
   margin-left: 40px;
   margin-right: 40px;
@@ -289,6 +292,7 @@
     font-size: 16px;
   }
 }
+
 .product__button {
   display: inline-block;
   align-self: center;
