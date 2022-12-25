@@ -1,170 +1,165 @@
- .backdrop {
-     position: fixed;
-     top: 0;
-     left: 0;
-     z-index: 100;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
-     width: 100%;
-     height: 100%;
+  width: 100%;
+  height: 100%;
 
-     background-color: rgba(0, 0, 0, 0.2);
-     opacity: 1;
-     transition: opacity var(--transition);
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--transition);
 
-     /* Приховування коли вікно неактивне */
-     &.is-hidden {
-         opacity: 0;
-         visibility: hidden;
-         pointer-events: none;
-     }
- }
+  /* Приховування коли вікно неактивне */
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 
- .modal {
-     position: absolute;
-     top: 0;
-     left: 50%;
-     transform: translateX(-50%);
-     padding: 28px;
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 28px;
 
-     background: #FCFCFC;
-     border: 2px solid var(--brand-color);
-     border-radius: 10px;
+  background: #fcfcfc;
+  border: 2px solid var(--brand-color);
+  border-radius: 10px;
 
-     width: 100%;
-     max-width: 280px;
-     height: auto;
-     align-content: center;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  align-content: center;
 
-     overflow-y: scroll;
-     overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
-     @media screen and (min-width: 480.1px) {
-         max-width: 568px;
-         padding: 32px 60px;
-     }
- }
+  @media screen and (min-width: 480.1px) {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
+}
 
- .modal__close-button {
-     position: absolute;
-     top: 12px;
-     right: 12px;
+.modal__close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 
-     width: 20px;
-     height: 20px;
-     padding: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
 
-     background: none;
+  fill: var(--main-text-color);
+  background: none;
 
-     align-items: center;
-     justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-     border: 0;
- }
+  border: 0;
+}
 
- .modal__title {
-     font-family: var(--secondary-font-family);
-     font-weight: 400;
-     margin-bottom: 20px;
+.modal__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  margin-bottom: 20px;
 
-     font-size: 16px;
-     line-height: 24px;
-     text-align: center;
- }
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
 
- .modal__text {
-     font-family: var(--main-font-family);
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 140%;
-     /* or 20px */
+.modal__text {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
 
+  color: var(--main-text-color);
+}
 
-     color: var(--main-text-color);
- }
+.modal__form {
+  margin: 24px auto 0;
+  max-width: 224px;
 
- .modal__form {
-     margin: 24px auto 0;
-     max-width: 224px;
+  @media screen and (min-width: 480.1px) {
+    max-width: 368px;
+  }
+}
 
-     @media screen and (min-width: 480.1px) {
-         max-width: 368px;
-     }
- }
+.modal__form-item {
+  position: relative;
+  margin: 0 auto 12px;
+  max-width: 100%;
+  height: 32px;
+}
 
- .modal__form-item {
-     position: relative;
-     margin: 0 auto 12px;
-     max-width: 100%;
-     height: 32px;
- }
+.modal__form-item--comment {
+  height: 64px;
+}
 
- .modal__form-item--comment {
-     height: 64px;
- }
+.modal__placeholder {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--main-text-color);
+  transition: var(--normal-transition-duration);
+}
 
- .modal__placeholder {
-     position: absolute;
-     top: 8px;
-     left: 12px;
-     font-family: var(--main-font-family);
-     font-style: normal;
-     font-weight: 400;
-     font-size: 12px;
-     line-height: 140%;
-     color: var(--main-text-color);
-     transition: var(--normal-transition-duration);
- }
+.modal__input {
+  width: 100%;
+  height: 100%;
 
- .modal__input {
-     width: 100%;
-     height: 100%;
+  padding: 8px 12px 7px;
 
-     padding: 8px 12px 7px;
+  background: var(--background-input-color);
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+}
 
-     background: var(--background-input-color);
-     border: 1px solid var(--background-color);
-     border-radius: 10px;
- }
+.modal__input:focus + .modal__placeholder,
+.modal__input:not(:placeholder-shown) + .modal__placeholder {
+  font-size: 10px;
+  line-height: 12px;
+  transform: translate(-20%, -160%);
+}
 
- .modal__input:focus+.modal__placeholder,
- .modal__input:not(:placeholder-shown)+.modal__placeholder {
-     font-size: 10px;
-     line-height: 12px;
-     transform: translate(-20%, -160%);
- }
+.modal__button {
+  margin: 24px auto 0;
+  width: 114px;
+  height: 42px;
+  max-width: 100%;
 
- // input:invalid {
- //     background-color: red;
- // }
+  background: var(--brand-color);
+  border-radius: 10px;
+  border: 0;
+}
 
- .modal__button {
-     margin: 24px auto 0;
-     width: 114px;
-     height: 42px;
-     max-width: 100%;
+.modal__button-text {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--main-text-color);
+}
 
-     background: var(--brand-color);
-     border-radius: 10px;
-     border: 0;
- }
+.modal__map {
+  max-width: 224px;
+  max-height: 199px;
 
- .modal__button-text {
-     font-family: var(--main-font-family);
-     font-style: normal;
-     font-weight: 600;
-     font-size: 12px;
-     line-height: 15px;
-     color: var(--main-text-color);
- }
-
- .modal__map {
-     max-width: 224px;
-     max-height: 199px;
-
-     @media screen and (min-width: 480.1px) {
-         max-width: 448px;
-         max-height: 260px;
-     }
- }
-
+  @media screen and (min-width: 480.1px) {
+    max-width: 448px;
+    max-height: 260px;
+  }
+}

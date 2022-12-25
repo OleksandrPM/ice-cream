@@ -1,7 +1,7 @@
 <!-------------------- modal product card -------------------->
-<div class="product-card__backdrop is-hidden" data-modal>
-  <div class="modal" data-modal-window>
-    <button class="close__btn" data-modal-close>
+<div class="backdrop product-card__backdrop is-hidden" data-modal>
+  <div class="modal product-card__modal" data-modal-window>
+    <button class="product-card__btn modal__close-button" data-modal-close>
       <svg class="close__icon" width="20" height="20">
         <use href="./images/icons.svg#close-icon"></use>
       </svg>
@@ -128,7 +128,7 @@
             minlength="10"
             required
             placeholder="Phone"
-            pattern="0-9.\+"
+            pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
           />
         </div>
         <label class="form__label" for="user_comment"></label>
