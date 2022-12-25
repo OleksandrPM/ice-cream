@@ -7,11 +7,8 @@
 
 //   background-color: rgba(0, 0, 0, 0.2);
 
-//   transition-duration: map-get($transitions, 'normal-transition-duration');
-//   transition-timing-function: map-get(
-//     $transitions,
-//     'normal-transition-timing-function'
-//   );
+//   transition-duration: var(--normal-transition-duration);
+//   transition-timing-function: var(--normal-transition-timing-function);
 //   transition-property: visibility, opacity;
 
 //   &--is-hidden {
@@ -24,11 +21,8 @@
 // .backdrop__modal {
 //   opacity: 1;
 
-//   transition-duration: map-get($transitions, 'normal-transition-duration');
-//   transition-timing-function: map-get(
-//     $transitions,
-//     'normal-transition-timing-function'
-//   );
+//   transition-duration: var(--normal-transition-duration);
+//   transition-timing-function: var(--normal-transition-timing-function);
 //   transition-property: transform, opacity;
 
 //   .backdrop--is-hidden & {
