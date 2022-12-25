@@ -4,8 +4,8 @@
   --mobile-width: 480px;
   --tablet-width: 768px;
   --desktop-width: 1200px;
-  --main-font-family: "Montserrat", sans-serif;
-  --secondary-font-family: "Seymour One", sans-serif;
+  --main-font-family: 'Montserrat', sans-serif;
+  --secondary-font-family: 'Seymour One', sans-serif;
   --main-font-style: normal;
   --main-text-color: #131313;
   --inverse-text-color: #fcfcfc;
@@ -32,7 +32,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -128,7 +128,8 @@ button {
     background-color: var(--brand-color);
     border-radius: 10px;
   }
-  .header__btn:hover, .header__btn:focus {
+  .header__btn:hover,
+  .header__btn:focus {
     background-color: var(--button-hover-color);
   }
   .header__btn:focus {
@@ -167,9 +168,11 @@ button {
   font-size: 16px;
   line-height: 1.25;
   color: var(--inverse-text-color);
-  transition: color var(--normal-transition-duration) var(--normal-transition-timing-function);
+  transition: color var(--normal-transition-duration)
+    var(--normal-transition-timing-function);
 }
-.nav__link:hover, .nav__link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--brand-color);
   cursor: url(../images/header/cursor.png), auto;
 }
@@ -228,7 +231,7 @@ button {
 
 .advantages-item::before {
   display: flex;
-  content: "";
+  content: '';
   width: 50px;
   height: 50px;
   position: relative;
@@ -408,9 +411,9 @@ button {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-          animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -615,7 +618,7 @@ button {
   min-width: 196px;
   height: 42px;
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -629,7 +632,8 @@ button {
   gap: 10px;
   padding: 12px auto;
   cursor: pointer;
-  transition: var(--normal-transition-duration) var(--normal-transition-timing-function);
+  transition: var(--normal-transition-duration)
+    var(--normal-transition-timing-function);
 }
 
 .btn--locations {
@@ -683,7 +687,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   padding: 28px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   border: 2px solid var(--brand-color);
   border-radius: 10px;
   width: 100%;
@@ -822,4 +826,4 @@ button {
     max-width: 448px;
     max-height: 260px;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

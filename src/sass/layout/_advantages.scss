@@ -40,13 +40,13 @@
   border-radius: 50%;
 }
 .advantages-item.icon-cow::before {
-   background-image: url(../images/advantages/cow.png);
+  background-image: url(../images/advantages/cow.png);
 }
 .advantages-item.icon-weight::before {
   background-image: url(../images/advantages/weight.png);
 }
 .advantages-item.icon-ice::before {
-   background-image: url(../images/advantages/ice.png);
+  background-image: url(../images/advantages/ice.png);
 }
 .advantages-title {
   text-align: center;
@@ -65,7 +65,6 @@
   text-align: center;
   font-weight: 700;
   line-height: 170%;
-
 }
 
 @media screen and (min-width: 768px) {

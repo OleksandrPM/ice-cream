@@ -53,7 +53,6 @@
   height: 20px;
   padding: 0;
 
-  fill: var(--main-text-color);
   background: none;
 
   align-items: center;
@@ -125,6 +124,13 @@
   background: var(--background-input-color);
   border: 1px solid var(--background-color);
   border-radius: 10px;
+}
+
+.modal__input:focus + .modal__placeholder,
+.modal__input:not(:placeholder-shown) + .modal__placeholder {
+  font-size: 10px;
+  line-height: 12px;
+  transform: translate(-20%, -160%);
 }
 
 .modal__input:focus + .modal__placeholder,

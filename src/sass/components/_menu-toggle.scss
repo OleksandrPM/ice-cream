@@ -10,7 +10,7 @@
   margin-left: auto;
   padding: 0;
   background-color: transparent;
-  color:  var(--button-text-inverse-color);
+  color: var(--button-text-inverse-color);
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -21,7 +21,7 @@
 }
 @media screen and (min-width: 1200px) {
   .menu-toggle {
-  display: none;
+    display: none;
   }
 }
 .menu-toggle:hover,
@@ -62,7 +62,6 @@
   right: 20px;
 }
 .mobile-menu {
-     
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -72,23 +71,28 @@
   list-style: none;
   text-align: center;
   &__btn {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
     margin-top: auto;
     max-width: 152px;
     padding: 12px 36px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 600;
     font-size: 14px;
     line-height: calc(18 / 14);
     border: transparent;
     background-color: var(--brand-color);
     border-radius: 10px;
-    &:hover, &:focus {
-    background-color:var(--button-hover-color);}
-    &:focus {color: var( --button-text-inverse-color);}
-    
-    &__span {
-      margin-left: 4px;
-    }}
+    &:hover,
+    &:focus {
+      background-color: var(--button-hover-color);
+    }
+    &:focus {
+      color: var(--button-text-inverse-color);
+    }
+  }
   &__link.current-page {
     color: var(--main-text-color);
   }
@@ -106,16 +110,17 @@
     &:focus {
       color: var(--main-text-color);
     }
-
   }
-   @media screen and (min-width: 768px) {
-   padding: 20px;
-   &__btn {display: none;}
-   }
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+    &__btn {
+      display: none;
+    }
+  }
 }
 .menu__icon {
   fill: currentColor;
 }
 .current-page {
-  color:var(--main-text-color);
+  color: var(--brand-color);
 }

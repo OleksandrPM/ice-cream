@@ -1,11 +1,4 @@
-.gallery {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .gallery__container {
-  margin: auto;
-
   // Tablet styles
   @media screen and (min-width: 768px) {
     padding-left: 32px;
@@ -14,14 +7,37 @@
 
   // Desktop styles
   @media screen and (min-width: 1200px) {
-    padding-left: 94px;
+    padding-left: 93px;
     padding-right: 94px;
   }
 }
 
-.gallery__image {
+.gallery__slideset {
   margin-left: auto;
   margin-right: auto;
+  min-width: 280px;
+  min-height: 130px;
+
+  // Phone styles
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    height: 130px;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+  }
+
+  // Desktop styles
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
+
+.gallery__image {
   max-width: 100%;
 
   border-radius: 8px;
