@@ -1,0 +1,2 @@
+var locationModal=document.getElementById("location"),openLocationBtn=document.getElementsByClassName("location-open"),closeLocationBtn=document.getElementById("location-close");openLocationBtn[0].onclick=function(){locationModal.style.display="block"},closeLocationBtn.onclick=function(){locationModal.style.display="none"},window.onclick=function(o){o.target==locationModal&&(locationModal.style.display="none")};
+//# sourceMappingURL=index.e6631a58.js.map
