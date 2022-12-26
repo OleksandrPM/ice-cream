@@ -1,13 +1,7 @@
 .gallery__container {
-  // Tablet styles
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   // Desktop styles
   @media screen and (min-width: 1200px) {
-    padding-left: 93px;
+    padding-left: 94px;
     padding-right: 94px;
   }
 }
@@ -15,8 +9,8 @@
 .gallery__slideset {
   margin-left: auto;
   margin-right: auto;
-  min-width: 280px;
-  min-height: 130px;
+  width: 87.5vw;
+  height: 40.6vw;
 
   // Phone styles
   @media screen and (min-width: 480px) {
@@ -37,10 +31,15 @@
   }
 }
 
-.gallery__image {
-  max-width: 100%;
+.slideset__item {
+  display: block;
+  width: 100%;
+}
 
+.gallery__image {
+  width: 100%;
   border-radius: 8px;
+  overflow: hidden;
 
   // Tablet styles
   @media screen and (min-width: 768px) {

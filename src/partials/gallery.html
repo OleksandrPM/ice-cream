@@ -3,55 +3,187 @@
     <h2 class="visually-hidden">Gallery</h2>
     <ul class="slideset gallery__slideset">
       <li class="slideset__item">
-        <img
-          class="image gallery__image"
-          srcset="
-            ./images/gallery/cones-and-berries/mobile/img.jpg      280w,
-            ./images/gallery/cones-and-berries/mobile/img@2x.jpg   560w,
-            ./images/gallery/cones-and-berries/tablet/img.jpg      704w,
-            ./images/gallery/cones-and-berries/tablet/img@2x.jpg  1408w,
-            ./images/gallery/cones-and-berries/desktop/img.jpg    1013w,
-            ./images/gallery/cones-and-berries/desktop/img@2x.jpg 2026w
-          "
-          src="./images/gallery/cones-and-berries/mobile/img.jpg"
-          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 280px, 100vw"
-          min-width="280"
-          alt="Ice cream corns with berries"
-        />
+        <picture class="gallery__picture">
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/cones-and-berries/desktop/img.webp    1x,
+              ./images/gallery/cones-and-berries/desktop/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/cones-and-berries/desktop/img.jpg    1x,
+              ./images/gallery/cones-and-berries/desktop/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/cones-and-berries/tablet/img.webp    1x,
+              ./images/gallery/cones-and-berries/tablet/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/cones-and-berries/tablet/img.jpg    1x,
+              ./images/gallery/cones-and-berries/tablet/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/gallery/cones-and-berries/mobile/img.webp    1x,
+              ./images/gallery/cones-and-berries/mobile/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/gallery/cones-and-berries/mobile/img.jpg    1x,
+              ./images/gallery/cones-and-berries/mobile/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/cones-and-berries/mobile/img.jpg"
+            alt="Ice cream cones with berries"
+            loading="lazy"
+          />
+        </picture>
       </li>
       <li class="slideset__item">
-        <img
-          class="image gallery__image"
-          srcset="
-            ./images/gallery/ice-cream-on-stick/mobile/img.jpg      280w,
-            ./images/gallery/ice-cream-on-stick/mobile/img@2x.jpg   560w,
-            ./images/gallery/ice-cream-on-stick/tablet/img.jpg      704w,
-            ./images/gallery/ice-cream-on-stick/tablet/img@2x.jpg  1408w,
-            ./images/gallery/ice-cream-on-stick/desktop/img.jpg    1013w,
-            ./images/gallery/ice-cream-on-stick/desktop/img@2x.jpg 2026w
-          "
-          src="./images/gallery/ice-cream-on-stick/mobile/img.jpg"
-          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 280px, 100vw"
-          min-width="280"
-          alt="Ice cream on a stick"
-        />
+        <picture class="gallery__picture">
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ice-cream-on-stick/desktop/img.webp    1x,
+              ./images/gallery/ice-cream-on-stick/desktop/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ice-cream-on-stick/desktop/img.jpg    1x,
+              ./images/gallery/ice-cream-on-stick/desktop/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ice-cream-on-stick/tablet/img.webp    1x,
+              ./images/gallery/ice-cream-on-stick/tablet/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ice-cream-on-stick/tablet/img.jpg    1x,
+              ./images/gallery/ice-cream-on-stick/tablet/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/gallery/ice-cream-on-stick/mobile/img.webp    1x,
+              ./images/gallery/ice-cream-on-stick/mobile/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/gallery/ice-cream-on-stick/mobile/img.jpg    1x,
+              ./images/gallery/ice-cream-on-stick/mobile/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/ice-cream-on-stick/mobile/img.jpg"
+            alt="Ice creams on stick"
+            loading="lazy"
+          />
+        </picture>
       </li>
       <li class="slideset__item">
-        <img
-          class="image gallery__image"
-          srcset="
-            ./images/gallery/cones-in-sprinkles/mobile/img.jpg      280w,
-            ./images/gallery/cones-in-sprinkles/mobile/img@2x.jpg   560w,
-            ./images/gallery/cones-in-sprinkles/tablet/img.jpg      704w,
-            ./images/gallery/cones-in-sprinkles/tablet/img@2x.jpg  1408w,
-            ./images/gallery/cones-in-sprinkles/desktop/img.jpg    1013w,
-            ./images/gallery/cones-in-sprinkles/desktop/img@2x.jpg 2026w
-          "
-          src="./images/gallery/cones-in-sprinkles/mobile/img.jpg"
-          sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 280px, 100vw"
-          min-width="280"
-          alt="Ice cream corns in sprinkles"
-        />
+        <picture class="gallery__picture">
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/cones-in-sprinkles/desktop/img.webp    1x,
+              ./images/gallery/cones-in-sprinkles/desktop/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/cones-in-sprinkles/desktop/img.jpg    1x,
+              ./images/gallery/cones-in-sprinkles/desktop/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/cones-in-sprinkles/tablet/img.webp    1x,
+              ./images/gallery/cones-in-sprinkles/tablet/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/cones-in-sprinkles/tablet/img.jpg    1x,
+              ./images/gallery/cones-in-sprinkles/tablet/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/gallery/cones-in-sprinkles/mobile/img.webp    1x,
+              ./images/gallery/cones-in-sprinkles/mobile/img@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.98px)"
+            srcset="
+              ./images/gallery/cones-in-sprinkles/mobile/img.jpg    1x,
+              ./images/gallery/cones-in-sprinkles/mobile/img@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/cones-in-sprinkles/mobile/img.jpg"
+            alt="Ice cream corns in sprinkles"
+            loading="lazy"
+          />
+        </picture>
       </li>
     </ul>
   </div>
