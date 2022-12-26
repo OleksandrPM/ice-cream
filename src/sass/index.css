@@ -2471,11 +2471,6 @@ button {
   margin-bottom: 20px;
 }
 
-.video {
-  min-width: 220px;
-  min-height: 199px;
-}
-
 .modal-read-more__desc {
   font-style: normal;
   font-weight: 400;
@@ -2494,10 +2489,6 @@ button {
     max-width: 444px;
     height: 205px;
     margin-bottom: 32px;
-  }
-  .video {
-    width: 444px;
-    height: 205px;
   }
 }
 .product-card__modal {
