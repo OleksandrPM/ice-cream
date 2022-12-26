@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName('review-card');
+  let slides = document.getElementsByClassName('review-item');
   let dots = document.getElementsByClassName('dot');
   if (n > slides.length) {
     slideIndex = 1;
