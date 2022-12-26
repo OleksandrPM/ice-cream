@@ -2,13 +2,13 @@
 var locationModal = document.getElementById('location');
 
 // Get the button that opens the modal
-var openLocationBtn = document.getElementsByClassName('location-open')[0];
+var openLocationBtn = document.getElementsByClassName('location-open');
 
 // Get the button that closes the modal
 var closeLocationBtn = document.getElementById('location-close');
 
 // When the user clicks on the button, open the modal
-openLocationBtn.onclick = function () {
+openLocationBtn[0].onclick = function () {
   locationModal.style.display = 'block';
 };
 
@@ -19,7 +19,7 @@ closeLocationBtn.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == locationModal) {
     locationModal.style.display = 'none';
   }
 };

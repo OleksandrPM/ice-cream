@@ -1,36 +1,33 @@
 .product__section {
-  //   Delete after correcting
-  background-color: beige;
-
   max-width: 1200px;
   margin: 0 auto;
 
-  background-image: url('../images/products/background_sm@1x.png');
+  background-image: url('../images/background/products/mobile/img.jpg');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/products/background_sm@2x.png');
+    background-image: url('../images/background/products/mobile/img@2x.jpg');
   }
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/products/background_md@1x.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/background/products/tablet/img.jpg');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/background_md@2x.png');
+      background-image: url('../images/background/products/tablet/img@2x.jpg');
     }
   }
 
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/products/background_lg@1x.png');
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/background/products/desktop/img.jpg');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/background_lg@2x.png');
+      background-image: url('../images/background/products/desktop/img@2x.jpg');
     }
   }
 }

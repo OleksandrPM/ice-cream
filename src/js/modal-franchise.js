@@ -2,13 +2,13 @@
 var franchiseModal = document.getElementById('franchise');
 
 // Get the button that opens the modal
-var openFranchiseBtn = document.getElementsByClassName('franchise-open')[0];
+var openFranchiseBtn = document.getElementsByClassName('franchise-open');
 
 // Get the button that closes the modal
 var closeFranchiseBtn = document.getElementById('franchise-close');
 
 // When the user clicks on the button, open the modal
-openFranchiseBtn.onclick = function () {
+openFranchiseBtn[0].onclick = function () {
   franchiseModal.style.display = 'block';
 };
 
@@ -19,7 +19,7 @@ closeFranchiseBtn.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == franchiseModal) {
     franchiseModal.style.display = 'none';
   }
 };
