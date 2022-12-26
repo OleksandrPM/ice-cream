@@ -2468,6 +2468,12 @@ button {
 .modal-read-more__video {
   min-width: 220px;
   min-height: 199px;
+  margin-bottom: 20px;
+}
+
+.video {
+  min-width: 220px;
+  min-height: 199px;
 }
 
 .modal-read-more__desc {
@@ -2487,6 +2493,7 @@ button {
   .modal-read-more__video {
     max-width: 444px;
     height: 205px;
+    margin-bottom: 32px;
   }
   .video {
     width: 444px;
