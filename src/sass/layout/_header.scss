@@ -9,9 +9,10 @@
   width: 100%;
   background-color: var(--background-color);
   transition: background-color 300ms ease-out, backdrop-filter 300ms ease-out;
+
   &--no-transparency {
-  background-color: rgba(25, 28, 38, 0.5);
-  backdrop-filter: blur(4px);
+    background-color: rgba(25, 28, 38, 0.5);
+    backdrop-filter: blur(4px);
   }
 
   &__container {
@@ -21,24 +22,33 @@
     font-weight: 500;
     letter-spacing: 0.02em;
   }
+
   &__btn {
     display: none;
-  &:focus-visible{outline: transparent;}
+
+    &:focus-visible {
+      outline: transparent;
+    }
   }
+
   &__logo {
     color: var(--brand-color);
   }
+
   @media screen and (min-width: 768px) {
     padding-top: 20px;
+
     &__container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 14px;
     }
+
     &__btn {
       display: inline-flex;
       gap: 4px;
+      margin-top: 4px;
       align-items: center;
       min-width: 152px;
       padding: 12px 36px;
@@ -49,28 +59,37 @@
       border: transparent;
       background-color: var(--brand-color);
       border-radius: 10px;
+
       &:hover,
       &:focus {
         background-color: var(--button-hover-color);
       }
+
       &:focus {
         color: var(--button-text-inverse-color);
       }
     }
   }
- 
+
   @media screen and (min-width: 1200px) {
     padding-top: 8px;
+
     &__container {
       width: 1200px;
       display: flex;
       align-items: center;
-     }
+    }
+
+    &__btn {
+      margin-top: 20px;
+    }
   }
 }
+
 .btn__icon--header {
-fill: currentColor;
+  fill: currentColor;
 }
+
 .nav {
   display: none;
 
@@ -78,6 +97,7 @@ fill: currentColor;
     display: flex;
     justify-content: center;
   }
+
   &__list {
     display: flex;
     gap: 25px;
@@ -88,33 +108,39 @@ fill: currentColor;
     font-size: 16px;
     line-height: calc(20 / 16);
     color: var(--inverse-text-color);
-    transition: color var(--normal-transition-duration)
-      var(--normal-transition-timing-function);
+    transition: color var(--normal-transition-duration) var(--normal-transition-timing-function);
+
     &:hover,
     &:focus {
       color: var(--brand-color);
       cursor: url(../images/header/cursor.png), auto;
     }
+
     @media screen and (min-width: 481px) {
       padding-top: 32px;
       padding-bottom: 13px;
-     }
+    }
   }
 }
+
 .logo__svg {
   fill: currentColor;
+
   @media screen and (min-width: 768px) {
     width: 48px;
     height: 44px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 60px;
     height: 65px;
   }
 }
+
 .nav__link {
-   position: relative;
-   &::after {
+  position: relative;
+
+  &::after {
     content: '';
     position: absolute;
     bottom: 5px;
@@ -126,12 +152,13 @@ fill: currentColor;
     opacity: 0;
     transform: scaleX(0.2);
     transition: opacity 300ms ease-out, transform 300ms ease-out;
-   }
-    &:hover,
-    &:focus {
-      &::after {
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
       opacity: 1;
       transform: scaleX(1);
     }
-}
+  }
 }

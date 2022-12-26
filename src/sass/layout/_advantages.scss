@@ -4,8 +4,10 @@
   padding-right: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 32px; /* для секції*/
-  padding-top: 50px; /* для секції, якщо не закладений в about*/
+  padding-bottom: 32px;
+  /* для секції*/
+  padding-top: 50px;
+  /* для секції, якщо не закладений в about*/
   color: var(--inverse-text-color);
   background: var(--background-color);
 }
@@ -16,6 +18,7 @@
   margin: 0;
   list-style: none;
 }
+
 .advantages-item {
   max-width: calc(100% - (2 * 0px));
   height: auto;
@@ -24,6 +27,7 @@
   display: block;
   /*flex-basis: calc((100% - 0 * (1 - 1)) / 1);*/
 }
+
 .advantages-item::before {
   display: flex;
   content: '';
@@ -39,15 +43,19 @@
   background-position: center;
   border-radius: 50%;
 }
+
 .advantages-item.icon-cow::before {
   background-image: url(../images/advantages/cow.png);
 }
+
 .advantages-item.icon-weight::before {
   background-image: url(../images/advantages/weight.png);
 }
+
 .advantages-item.icon-ice::before {
   background-image: url(../images/advantages/ice.png);
 }
+
 .advantages-title {
   text-align: center;
   font-weight: 700;
@@ -56,6 +64,7 @@
   letter-spacing: 0.04em;
   margin-bottom: 16px;
 }
+
 .advantages-desc {
   margin-right: auto;
   margin-left: auto;
@@ -63,19 +72,21 @@
 
   width: 230px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 170%;
 }
 
 @media screen and (min-width: 768px) {
   .advantages {
     min-width: 100vw;
-    padding-bottom: 60px; /* для секції*/
-    padding-top: 60px; /* для секції, якщо не закладений в about*/
+    padding-bottom: 60px;
+    /* для секції*/
+    padding-top: 60px;
+    /* для секції, якщо не закладений в about*/
   }
+
   .advantages-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     max-width: 100vw;
     height: auto;
@@ -83,21 +94,25 @@
     margin-right: 76px;
     margin-left: 76px;
   }
+
   .advantages-item {
     flex-basis: calc((100% - 80px * 2) / 3);
   }
+
   .advantages-title {
     font-size: 48px;
     line-height: calc(59 / 48);
 
     margin-bottom: 12px;
   }
+
   .advantages-desc {
     width: 152px;
     font-size: 14px;
     line-height: 174%;
     margin-bottom: 0;
   }
+
   .advantages-item::before {
     margin: 0 auto 32px auto;
   }
@@ -105,20 +120,25 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    padding-bottom: 80px; /* для секції*/
+    padding-bottom: 80px;
+    /* для секції*/
   }
+
   .advantages-list {
     margin-right: 16px;
     margin-left: 16px;
     gap: 32px;
   }
+
   .advantages-item {
     flex-basis: calc((100% - 32px * 2) / 3);
   }
+
   .advantages-title {
     font-size: 58px;
     line-height: calc(71 / 58);
   }
+
   .advantages-desc {
     width: 368px;
     font-size: 16px;
@@ -126,6 +146,7 @@
     margin-bottom: 0;
     letter-spacing: 0.02em;
   }
+
   .advantages-item::before {
     margin: 0 auto 40px auto;
   }

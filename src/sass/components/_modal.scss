@@ -1,5 +1,6 @@
 .backdrop {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
   top: 0;
   left: 0;
@@ -76,16 +77,28 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 322px;
+    margin: 0 auto 24px;
+  }
 }
 
 .modal__text {
   font-family: var(--main-font-family);
+  display: flex;
+  margin-bottom: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
 
   color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    font-size: 16px;
+  }
 }
 
 .modal__form {
@@ -132,8 +145,8 @@
   border-radius: 10px;
 }
 
-.modal__input:focus + .modal__placeholder,
-.modal__input:not(:placeholder-shown) + .modal__placeholder {
+.modal__input:focus+.modal__placeholder,
+.modal__input:not(:placeholder-shown)+.modal__placeholder {
   font-size: 10px;
   line-height: 12px;
   transform: translate(-20%, -160%);
