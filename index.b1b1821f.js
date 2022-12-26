@@ -1,0 +1,2 @@
+var readMoreModal=document.getElementById("read-more"),openReadMoreBtn=document.getElementsByClassName("read-more-open"),closeReadMoreBtn=document.getElementById("read-more-close");openReadMoreBtn[0].onclick=function(){readMoreModal.style.display="block"},closeReadMoreBtn.onclick=function(){readMoreModal.style.display="none"},window.onclick=function(e){e.target==readMoreModal&&(readMoreModal.style.display="none")};
+//# sourceMappingURL=index.b1b1821f.js.map
