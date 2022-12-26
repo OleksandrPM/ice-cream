@@ -80,8 +80,8 @@
     max-width: 100vw;
     height: auto;
     gap: 80px;
-    margin-right: 76px;
-    margin-left: 76px;
+    margin-right: 44px;
+    margin-left: 44px;
   }
   .advantages-item {
     flex-basis: calc((100% - 80px * 2) / 3);
@@ -108,8 +108,8 @@
     padding-bottom: 80px; /* для секції*/
   }
   .advantages-list {
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
     gap: 32px;
   }
   .advantages-item {
