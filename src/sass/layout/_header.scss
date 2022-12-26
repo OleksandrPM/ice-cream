@@ -23,6 +23,7 @@
   }
   &__btn {
     display: none;
+  &:focus-visible{outline: transparent;}
   }
   &__logo {
     color: var(--brand-color);
@@ -110,4 +111,27 @@ fill: currentColor;
     width: 60px;
     height: 65px;
   }
+}
+.nav__link {
+   position: relative;
+   &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--brand-color);
+    opacity: 0;
+    transform: scaleX(0.2);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+   }
+    &:hover,
+    &:focus {
+      &::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+}
 }
