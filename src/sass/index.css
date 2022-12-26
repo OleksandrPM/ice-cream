@@ -2467,8 +2467,14 @@ button {
 
 .modal-read-more__video {
   min-width: 220px;
-  min-height: 199px;
+  height: 199px;
   margin-bottom: 20px;
+}
+
+.video {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-read-more__desc {
@@ -2476,7 +2482,6 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  /* or 20px */
   color: var(--main-text-color);
 }
 
@@ -2486,8 +2491,8 @@ button {
     margin-top: 32px;
   }
   .modal-read-more__video {
-    max-width: 444px;
-    height: 205px;
+    min-width: 444px;
+    min-height: 205px;
     margin-bottom: 32px;
   }
 }
