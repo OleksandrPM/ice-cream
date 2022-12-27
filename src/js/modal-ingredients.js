@@ -1,11 +1,11 @@
 // Get the modal
-var ingredientsModal = document.getElementById('ingredients');
+var ingredientsModal = document.getElementById('js-ingredients');
 
 // Get the button that opens the modal
-var openIngredientsBtn = document.getElementsByClassName('ingredients-open');
+var openIngredientsBtn = document.getElementsByClassName('js-ingredients-open');
 
 // Get the button that closes the modal
-var closeIngredientsBtn = document.getElementById('ingredients-close');
+var closeIngredientsBtn = document.getElementById('js-ingredients-close');
 
 // When the user clicks on the open button, open the modal
 openIngredientsBtn[0].onclick = function () {

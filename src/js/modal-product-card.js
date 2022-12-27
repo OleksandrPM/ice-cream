@@ -1,11 +1,11 @@
 // Get the modal
-var productsModal = document.getElementById('products');
+var productsModal = document.getElementById('js-products');
 
 // Get the button that opens the modal
-var openProductsBtn = document.getElementsByClassName('products-open');
+var openProductsBtn = document.getElementsByClassName('js-products-open');
 
 // Get the button that closes the modal
-var closeProductsBtn = document.getElementById('products-close');
+var closeProductsBtn = document.getElementById('js-products-close');
 
 // When the user clicks on the open button, open the modal
 openProductsBtn[0].onclick = function () {

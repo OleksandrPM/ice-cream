@@ -1,11 +1,11 @@
 // Get the modal
-var readMoreModal = document.getElementById('read-more');
+var readMoreModal = document.getElementById('js-read-more');
 
 // Get the button that opens the modal
-var openReadMoreBtn = document.getElementsByClassName('read-more-open');
+var openReadMoreBtn = document.getElementsByClassName('js-read-more-open');
 
 // Get the button that closes the modal
-var closeReadMoreBtn = document.getElementById('read-more-close');
+var closeReadMoreBtn = document.getElementById('js-read-more-close');
 
 // When the user clicks on the button, open the modal
 openReadMoreBtn[0].onclick = function () {
