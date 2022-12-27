@@ -1,33 +1,33 @@
- .backdrop {
-   display: none; /* Hidden by default */
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
 
-   background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 
-   transition-duration: var(--normal-transition-duration);
-   transition-timing-function: var(--normal-transition-timing-function);
-   transition-property: visibility, opacity;
+  transition-duration: var(--normal-transition-duration);
+  transition-timing-function: var(--normal-transition-timing-function);
+  transition-property: visibility, opacity;
 
-   &--is-hidden {
-     visibility: hidden;
-     opacity: 0;
-     pointer-events: none;
-   }
- }
+  &--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 
- .backdrop__modal {
-   opacity: 1;
+.backdrop__modal {
+  opacity: 1;
 
-   transition-duration: var(--normal-transition-duration);
-   transition-timing-function: var(--normal-transition-timing-function);
-   transition-property: transform, opacity;
+  transition-duration: var(--normal-transition-duration);
+  transition-timing-function: var(--normal-transition-timing-function);
+  transition-property: transform, opacity;
 
-   .backdrop--is-hidden & {
-     transform: translate(-50%, 0);
-     opacity: 0;
-   }
- }
+  .backdrop--is-hidden & {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+}
