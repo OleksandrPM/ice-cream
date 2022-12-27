@@ -1,47 +1,20 @@
-// Get the modal
-var ingredientsModal = document.getElementById('js-ingredients');
+(() => {
+  const refs = {
+    openIngredientsBtn: document.querySelectorAll('[js-ingredients-open]'),
+    closeIngredientsBtn: document.querySelector('[js-ingredients-close]'),
+    ingredientsModal: document.querySelector('[js-ingredients]'),
+  };
 
-// Get the button that opens the modal
-var openIngredientsBtn = document.getElementsByClassName('js-ingredients-open');
+  refs.openIngredientsBtn[0].addEventListener('click', openIngredients);
+  refs.openIngredientsBtn[1].addEventListener('click', openIngredients);
+  refs.openIngredientsBtn[2].addEventListener('click', openIngredients);
+  refs.closeIngredientsBtn.addEventListener('click', closeIngredients);
 
-// Get the button that closes the modal
-var closeIngredientsBtn = document.getElementById('js-ingredients-close');
-
-// When the user clicks on the open button, open the modal
-openIngredientsBtn[0].onclick = function () {
-  ingredientsModal.style.display = 'block';
-};
-openIngredientsBtn[1].onclick = function () {
-  ingredientsModal.style.display = 'block';
-};
-openIngredientsBtn[2].onclick = function () {
-  ingredientsModal.style.display = 'block';
-};
-
-// When the user clicks on the close button, close the modal
-closeIngredientsBtn.onclick = function () {
-  ingredientsModal.style.display = 'none';
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    ingredientsModal.style.display = 'none';
+  function openIngredients() {
+    refs.ingredientsModal.classList.remove('backdrop--is-hidden');
   }
-};
 
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[ingredients-open]'),
-//     closeModalBtn: document.querySelector('[ingredients-close]'),
-//     modal: document.querySelector('[ingredients]'),
-//   };
-
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-//   refs.closeModalBtn.addEventListener('click', toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//     refs.body.classList.toggle('no-scroll');
-//   }
-// })();
+  function closeIngredients() {
+    refs.ingredientsModal.classList.add('backdrop--is-hidden');
+  }
+})();

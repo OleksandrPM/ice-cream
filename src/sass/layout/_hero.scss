@@ -54,6 +54,17 @@
 }
 
 .hero__btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+
+  font-family: var(--main-font-family);
+  font-style: var(--main-font-style);
+  color: var(--main-text-color);
+
+  cursor: pointer;
   padding: 11px 26px;
   margin-right: 15px;
   border: 2px solid var(--brand-color);
