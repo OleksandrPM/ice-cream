@@ -10,7 +10,7 @@
   background-color: var(--background-color);
   transition: background-color 300ms ease-out, backdrop-filter 300ms ease-out;
   &--no-transparency {
-    background-color: rgba(25, 28, 38, 0.5);
+    background-color: rgba(50, 82, 4, 0.5);
     backdrop-filter: blur(4px);
   }
 
@@ -31,6 +31,7 @@
 
   &__logo {
     color: var(--brand-color);
+    cursor: url(../images/header/cursor.png), auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -117,8 +118,8 @@
     }
 
     @media screen and (min-width: 481px) {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -143,7 +144,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: 2px;
+    bottom: 10px;
     left: 5%;
     width: 90%;
     height: 4px;
