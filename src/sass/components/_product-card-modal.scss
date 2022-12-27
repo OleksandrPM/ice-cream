@@ -14,10 +14,6 @@
   transition-property: fill;
   transition-duration: var(--normal-transition-duration);
   transition-timing-function: var(--normal-transition-timing-function);
-  &:hover,
-  &:focus {
-    fill: var(--brand-color);
-  }
 }
 
 .product-card__title {
@@ -141,7 +137,7 @@
   padding: 8px 12px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 2px solid var(--background-color);
+  border: 1px solid var(--background-color);
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
@@ -184,7 +180,7 @@
   padding: 8px 12px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 2px solid var(--background-color);
+  border: 1px solid var(--background-color);
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
