@@ -23,7 +23,7 @@ closeProductsBtn.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == productsModal) {
+  if (event.target == modal) {
     productsModal.style.display = 'none';
   }
 };

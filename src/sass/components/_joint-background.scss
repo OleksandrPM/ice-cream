@@ -1,11 +1,9 @@
 .joint-background {
-  margin-left: auto;
-  margin-right: auto;
-
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-position-y: 32px;
+  background-position: bottom 150px;
 
   background-image: url(../images/background/gallery/mobile/img.jpg);
 
@@ -30,7 +28,6 @@
 
   // Desktop styles
   @media screen and (min-width: 1200px) {
-    max-width: var(--desktop-width);
     background-position-y: 98px;
 
     background-image: url(../images/background/gallery/desktop/img.jpg);
