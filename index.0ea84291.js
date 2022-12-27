@@ -1,0 +1,2 @@
+var franchiseModal=document.getElementById("js-franchise"),openFranchiseBtn=document.getElementsByClassName("js-franchise-open"),closeFranchiseBtn=document.getElementById("js-franchise-close");openFranchiseBtn[0].onclick=function(){franchiseModal.style.display="block"},closeFranchiseBtn.onclick=function(){franchiseModal.style.display="none"},window.onclick=function(n){n.target==franchiseModal&&(franchiseModal.style.display="none")};
+//# sourceMappingURL=index.0ea84291.js.map
