@@ -1,11 +1,11 @@
 // Get the modal
-var franchiseModal = document.getElementById('franchise');
+var franchiseModal = document.getElementById('js-franchise');
 
 // Get the button that opens the modal
-var openFranchiseBtn = document.getElementsByClassName('franchise-open');
+var openFranchiseBtn = document.getElementsByClassName('js-franchise-open');
 
 // Get the button that closes the modal
-var closeFranchiseBtn = document.getElementById('franchise-close');
+var closeFranchiseBtn = document.getElementById('js-franchise-close');
 
 // When the user clicks on the button, open the modal
 openFranchiseBtn[0].onclick = function () {

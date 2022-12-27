@@ -1,11 +1,11 @@
 // Get the modal
-var locationModal = document.getElementById('location');
+var locationModal = document.getElementById('js-location');
 
 // Get the button that opens the modal
-var openLocationBtn = document.getElementsByClassName('location-open');
+var openLocationBtn = document.getElementsByClassName('js-location-open');
 
 // Get the button that closes the modal
-var closeLocationBtn = document.getElementById('location-close');
+var closeLocationBtn = document.getElementById('js-location-close');
 
 // When the user clicks on the button, open the modal
 openLocationBtn[0].onclick = function () {
