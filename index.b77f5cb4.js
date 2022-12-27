@@ -1,0 +1,2 @@
+var productsModal=document.getElementById("products"),openProductsBtn=document.getElementsByClassName("products-open"),closeProductsBtn=document.getElementById("products-close");openProductsBtn[0].onclick=function(){productsModal.style.display="block"},openProductsBtn[1].onclick=function(){productsModal.style.display="block"},closeProductsBtn.onclick=function(){productsModal.style.display="none"},window.onclick=function(o){o.target==modal&&(productsModal.style.display="none")};
+//# sourceMappingURL=index.b77f5cb4.js.map
