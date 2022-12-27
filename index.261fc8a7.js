@@ -1,2 +1,0 @@
-var productsModal=document.getElementById("js-products"),openProductsBtn=document.getElementsByClassName("js-products-open"),closeProductsBtn=document.getElementById("js-products-close");openProductsBtn[0].onclick=function(){productsModal.style.display="block"},openProductsBtn[1].onclick=function(){productsModal.style.display="block"},closeProductsBtn.onclick=function(){productsModal.style.display="none"},window.onclick=function(o){o.target==modal&&(productsModal.style.display="none")};
-//# sourceMappingURL=index.261fc8a7.js.map
