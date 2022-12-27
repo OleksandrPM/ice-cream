@@ -10,8 +10,8 @@
   background-image: url(../images/background/gallery/mobile/img.jpg);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/background/gallery/mobile/img@2x.jpg);
   }
 
@@ -22,22 +22,21 @@
     background-image: url(../images/background/gallery/tablet/img.jpg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/background/gallery/tablet/img@2x.jpg);
     }
   }
 
   // Desktop styles
   @media screen and (min-width: 1200px) {
-    max-width: var(--desktop-width);
     background-position-y: 98px;
 
     background-image: url(../images/background/gallery/desktop/img.jpg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/background/gallery/desktop/img@2x.jpg);
     }
   }

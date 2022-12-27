@@ -8,40 +8,49 @@
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--main-text-color);
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     padding-bottom: 40px;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     padding-bottom: 120px;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
     @media screen and (min-width: 768px) {
       flex-direction: row;
       justify-content: center;
     }
+
     @media screen and (min-width: 1200px) {
       gap: 32px;
     }
   }
+
   &__item {
     background: var(--button-text-inverse-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     max-width: 280px;
     padding: 32px;
+
     @media screen and (min-width: 768px) {
       max-width: 224px;
       padding: 24px;
     }
+
     @media screen and (min-width: 1200px) {
       max-width: 368px;
       padding: 40px;
+      cursor: url(../images/header/cursor.png), auto;
     }
   }
 
@@ -56,11 +65,13 @@
     background: var(--brand-color);
     border-radius: 6px;
     line-height: calc(14 / 12);
+
     @media screen and (min-width: 768px) {
       padding: 4px 14px;
       line-height: calc(26 / 14);
       margin-bottom: 32px;
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(30 / 16);
     }
@@ -74,6 +85,7 @@
       line-height: calc(26 / 14);
       padding-bottom: 12px;
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(30 / 16);
       padding-bottom: 8px;
@@ -84,9 +96,11 @@
     letter-spacing: 0.04em;
     color: var(--address-text-color);
     line-height: calc(22 / 12);
+
     @media screen and (min-width: 768px) {
       line-height: calc(26 / 14);
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(29 / 16);
     }
@@ -95,28 +109,32 @@
   &__sked {
     gap: 12px;
     line-height: calc(22 / 12);
+
     @media screen and (min-width: 768px) {
       line-height: calc(26 / 14);
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(30 / 16);
     }
 
-    &--day {
-    }
+    // &--day {
+    // }
 
     &--time {
       color: var(--work-time-color);
     }
   }
+
   &__line {
     margin: 24px auto;
     color: #e1e1e1;
+
     @media screen and (min-width: 768px) {
       margin: 32px auto;
     }
-    @media screen and (min-width: 1200px) {
-    }
+
+    @media screen and (min-width: 1200px) {}
   }
 
   &__relations {
@@ -124,22 +142,24 @@
     flex-direction: column;
     gap: 6px;
     line-height: calc(19 / 12);
+
     @media screen and (min-width: 768px) {
       line-height: calc(21 / 14);
       gap: 4px;
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(24 / 16);
     }
 
-    &--item {
-    }
+    // &--item {}
 
     &--link {
       color: var(--main-text-color);
     }
   }
 }
+
 .contacts__content {
   display: flex;
   flex-wrap: wrap;
@@ -148,16 +168,18 @@
   justify-content: center;
   margin-top: 20px;
   gap: 16px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     margin-top: 40px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-top: 60px;
   }
 }
-.contacts__content--item {
-}
+
+// .contacts__content--item {}
 
 .contacts__btn {
   display: inline-flex;
@@ -174,40 +196,47 @@
   color: var(--main-text-color);
   gap: 10px;
   padding: 12px auto;
-  cursor: pointer;
-  transition: var(--normal-transition-duration)
-    var(--normal-transition-timing-function);
+  cursor: url(../images/header/cursor.png), auto;
+  transition: var(--normal-transition-duration) var(--normal-transition-timing-function);
 }
 
 .btn {
   &--locations {
     background: var(--brand-color);
+
     &:hover {
       background: var(--button-hover-color);
     }
+
     &:focus {
       background: var(--button-hover-color);
       color: var(--button-text-inverse-color);
     }
+
     &:disabled {
       background: var(--work-time-color);
     }
   }
+
   &--franchise {
     background: none;
     border: 2px solid var(--brand-color);
+
     &:hover {
       border: 2px solid var(--button-hover-color);
     }
+
     &:focus {
       border: 2px solid var(--button-hover-color);
       color: var(--button-text-inverse-color);
     }
+
     &:disabled {
       border: 2px solid var(--work-time-color);
     }
   }
 }
+
 .btn__icon--contacts {
   fill: currentColor;
 }

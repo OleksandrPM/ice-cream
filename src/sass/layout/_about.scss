@@ -14,6 +14,7 @@
 }
 
 .about__wrapper {
+
   // Tablet screen
   @media screen and (min-width: 768px) {
     display: flex;
@@ -94,11 +95,9 @@
   width: 279px;
   height: 278px;
 
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
+      rgba(248, 210, 78, 0.7)),
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 140px;
@@ -230,15 +229,14 @@
   font-size: 14px;
   line-height: 1.29;
 
+  cursor: url(../images/header/cursor.png), auto;
   color: var(--button-text-color);
   background-color: var(--brand-color);
   border-radius: 10px;
   border: none;
 
-  transition: background-color var(--normal-transition-duration)
-      var(--normal-transition-timing-function),
-    color var(--normal-transition-duration)
-      var(--normal-transition-timing-function);
+  transition: background-color var(--normal-transition-duration) var(--normal-transition-timing-function),
+    color var(--normal-transition-duration) var(--normal-transition-timing-function);
 
   &:hover,
   &:focus {
