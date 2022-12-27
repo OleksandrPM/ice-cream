@@ -15,9 +15,11 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  transition: color var(--normal-transition-duration) var(--normal-transition-timing-function);
 }
 .menu-toggle--close {
-  padding: 0;
+  padding: 10px;
+  &:hover{ cursor: url(../images/header/cursor.png), auto;}
 }
 @media screen and (min-width: 1200px) {
   .menu-toggle {
@@ -27,6 +29,7 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
   color: var(--brand-color);
+  cursor: url(../images/header/cursor.png), auto;
 }
 
 .menu-container {
@@ -86,12 +89,13 @@
     background-color: var(--brand-color);
     border-radius: 10px;
     transition: background-color var(--normal-transition-duration)
-        var(--normal-transition-timing-function),
-      color var(--normal-transition-duration)
-        var(--normal-transition-timing-function);
+    var(--normal-transition-timing-function),
+    color var(--normal-transition-duration)
+    var(--normal-transition-timing-function);
     &:hover,
     &:focus {
       background-color: var(--button-hover-color);
+      cursor: url(../images/header/cursor.png), auto;
     }
     &:focus {
       color: var(--button-text-inverse-color);
@@ -110,9 +114,11 @@
     letter-spacing: 0.02em;
     color: var(--inverse-text-color);
     text-decoration: none;
+    transition: color var(--normal-transition-duration) var(--normal-transition-timing-function);
     &:hover,
     &:focus {
       color: var(--main-text-color);
+      cursor: url(../images/header/cursor.png), auto;
     }
   }
   @media screen and (min-width: 768px) {
