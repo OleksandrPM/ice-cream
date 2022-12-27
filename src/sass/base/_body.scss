@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   font-family: var(--main-font-family), sans-serif;
   font-size: 12px;
