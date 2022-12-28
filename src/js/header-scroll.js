@@ -1,7 +1,7 @@
 window.onscroll = () => changeHeaderBackground();
 
 function changeHeaderBackground() {
-  const header = document.querySelector('[js-data-header]');
+  const header = document.querySelector('.js-data-header');
   const headerOffsetTrigger = header.offsetHeight;
   const pageOffset = window.pageYOffset;
 
