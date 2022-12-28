@@ -1,52 +1,27 @@
-// .backdrop {
+.ingredients {
+  padding: 28px 20px;
 
-//   transition: opacity 150ms linear, visibility 150ms linear;
+  @media (min-width: 768px) {
+    padding: 32px 40px;
+  }
+}
 
-//   overflow: scroll;
-// }
+.ingredients__title {
+  margin-bottom: 27px;
+  font-size: 20px;
+  line-height: 1.4;
 
-// .modal {
-//   padding: 28px 20px;
-
-//   width: 280px;
-
-//   transition: transform 150ms cubic-bezier(0, 0, 1, 1),
-//     opacity 150ms cubic-bezier(0, 0, 1, 1);
-
-//   @media (min-width: 768px) {
-//     width: 568px;
-//     padding: 32px 40px;
-//   }
-// }
-
-// .backdrop.is-hidden .modal {
-//   opacity: 0;
-//   transform: translate(-50%, -70%);
-// }
-
-// .modal__text {
-//   margin: 0;
-//   margin-bottom: 27px;
-
-//   width: 142px;
-//   font-family: 'Seymour One';
-//   font-size: 20px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   text-align: center;
-
-//   @media screen and (min-width: 768px) {
-//     width: 273px;
-//     margin-bottom: 24px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+  }
+}
 
 .ice-cream-div {
   margin-left: auto;
   margin-right: auto;
   width: 132px;
   height: 132px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   border-radius: 50%;
   background: linear-gradient(
@@ -56,103 +31,105 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+  &__picture {
+    position: relative;
+    bottom: 7px;
+  }
+
+  &__img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
-.ice-cream-div__picture {
-  position: relative;
-  bottom: 7px;
-}
-
-.ice-cream-div__img {
-  border-radius: 98px;
-  overflow: hidden;
-}
-
-.food-value {
+.food-values {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 9px;
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 48px;
+    gap: 20px;
   }
 }
 
-.food-value__item {
+.food-values__item {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 53px;
   height: 72px;
 
   border: 2px solid #9cbe8f;
   border-radius: 40px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 2.8;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 43px;
-    height: 43px;
-    border-radius: 50%;
-    top: -1px;
-
-    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-
-    background-color: #9cbe8f;
-  }
-
-  &:nth-child(1)::before {
-    content: '320';
-  }
-
-  &:nth-child(2)::before {
-    content: '4g';
-  }
-
-  &:nth-child(3)::before {
-    content: '8.2g';
-  }
-
-  &:nth-child(4)::before {
-    content: '40.4g';
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
   }
 }
 
-.food-value__member {
+.food-values__value {
   position: absolute;
-  margin: 0;
-  bottom: 8px;
+  top: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
 
-  font-family: 'Montserrat';
-  font-style: normal;
+  font-weight: 500;
   font-size: 10px;
-  line-height: 1.2;
+  line-height: 2.8;
 
-  color: #131313;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  @media screen and (min-width: 768px) {
+    width: 53px;
+    height: 53px;
+
+    font-size: 12px;
+    line-height: 2.33;
+  }
 }
 
-.modal__ingredients-text {
-  font-family: 'Montserrat';
-  font-style: normal;
+.food-values__kind {
+  position: absolute;
+  bottom: 8px;
+  font-size: 10px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 14px;
+
+    font-size: 12px;
+    line-height: 1.25px;
+  }
+}
+
+.ingredients__subtitle {
+  margin-bottom: 24px;
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
-  text-align: center;
-
-  margin-bottom: 24px;
 }
 
 .ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -161,30 +138,12 @@
 }
 
 .ingredients-list__item {
-  margin-bottom: 11px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.ingredients-member-list {
   display: flex;
-}
+  justify-content: space-between;
 
-.ingredients-member-list__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 176%;
+  line-height: 1.76;
   letter-spacing: 0.04em;
-
-  margin: 0;
-}
-
-.ingredients-member-list__item + .ingredients-member-list__item {
-  margin-left: auto;
 }
 
 .ingredients-form {
