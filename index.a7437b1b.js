@@ -1,0 +1,2 @@
+!function(){var o={openLocationBtn:document.querySelectorAll(".js-location-open"),closeLocationBtn:document.querySelector(".js-location-close"),locationModal:document.querySelector(".js-location")};function n(){o.locationModal.classList.toggle("backdrop--is-hidden")}o.openLocationBtn[0].addEventListener("click",n),o.closeLocationBtn.addEventListener("click",n)}();
+//# sourceMappingURL=index.a7437b1b.js.map
