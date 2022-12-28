@@ -11,7 +11,6 @@
 }
 
 .advantages-list {
-  /*max-width: 480px;*/
   padding: 0;
   margin: 0;
   list-style: none;
@@ -23,7 +22,6 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  /*flex-basis: calc((100% - 0 * (1 - 1)) / 1);*/
 }
 
 .advantages-item::before {

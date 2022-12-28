@@ -71,9 +71,11 @@
   &__sked {
     gap: 12px;
     line-height: calc(22 / 12);
+
     @media screen and (min-width: 768px) {
       line-height: calc(26 / 14);
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(30 / 16);
     }
@@ -86,9 +88,11 @@
   &__line {
     margin: 24px auto;
     color: #e1e1e1;
+
     @media screen and (min-width: 768px) {
       margin: 32px auto;
     }
+
     @media screen and (min-width: 1200px) {
     }
   }
@@ -98,10 +102,12 @@
     flex-direction: column;
     gap: 6px;
     line-height: calc(19 / 12);
+
     @media screen and (min-width: 768px) {
       line-height: calc(21 / 14);
       gap: 4px;
     }
+
     @media screen and (min-width: 1200px) {
       line-height: calc(24 / 16);
     }

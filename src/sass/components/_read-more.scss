@@ -8,30 +8,26 @@
   border-radius: 10px;
   width: 100%;
   height: 100%;
- } 
+}
 
 .modal-read-more__desc {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  
-  color: var(--main-text-color);
 
+  color: var(--main-text-color);
 }
 
 @media screen and (min-width: 768px) {
- 
   .modal-read-more__desc {
     font-size: 16px;
     margin-top: 32px;
   }
 
- 
   .modal-read-more__video {
-    min-width: 444px; 
+    min-width: 444px;
     min-height: 205px;
     margin-bottom: 32px;
   }
- 
 }

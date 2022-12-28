@@ -1,16 +1,5 @@
 // Hero
-.hero__title {
-  animation: top-to-bottom 1000ms ease 200ms both;
-}
-.hero__link {
-  animation: left-to-left 1000ms ease 1200ms both;
-}
-.hero__descr {
-  animation: left-to-right 1000ms ease 1200ms both;
-}
-.hero__text {
-  animation: bottom-to-top 1000ms ease 2200ms both;
-}
+
 @keyframes top-to-bottom {
   0% {
     opacity: 0;
@@ -26,6 +15,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes bottom-to-top {
   0% {
     opacity: 0;
@@ -41,6 +31,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes left-to-left {
   0% {
     opacity: 0;
@@ -56,6 +47,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes left-to-right {
   0% {
     opacity: 0;
@@ -69,5 +61,14 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
