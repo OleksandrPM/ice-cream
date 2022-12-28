@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openReadMorelBtn: document.querySelector('[js-read-more-open]'),
-    closeReadMoreBtn: document.querySelector('[js-read-more-close]'),
-    readMoreModal: document.querySelector('[js-read-more]'),
+    openReadMorelBtn: document.querySelector('.js-read-more-open'),
+    closeReadMoreBtn: document.querySelector('.js-read-more-close'),
+    readMoreModal: document.querySelector('.js-read-more'),
   };
 
   refs.openReadMorelBtn.addEventListener('click', toggleModal);

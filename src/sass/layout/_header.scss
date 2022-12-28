@@ -9,6 +9,7 @@
   width: 100%;
   background-color: var(--background-color);
   transition: background-color 300ms ease-out, backdrop-filter 300ms ease-out;
+
   &--no-transparency {
     background-color: rgba(50, 82, 4, 0.5);
     backdrop-filter: blur(4px);

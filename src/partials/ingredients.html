@@ -1,11 +1,11 @@
-<div class="backdrop backdrop--is-hidden" js-ingredients>
-  <div class="modal">
-    <button class="modal__close-button" js-ingredients-close>
+<div class="backdrop backdrop--is-hidden js-ingredients">
+  <div class="modal ingredients">
+    <button class="modal__close-button js-ingredients-close">
       <svg class="modal__button-icon" width="20" height="20">
         <use href="./images/ingredients/svg/modal-cross.svg#modal-cross"></use>
       </svg>
     </button>
-    <p class="modal__text">Chololate icecream</p>
+    <h2 class="modal__title ingredients__title">Chololate icecream</h2>
 
     <div class="ice-cream-div">
       <picture class="ice-cream-div__picture">
@@ -24,83 +24,53 @@
       </picture>
     </div>
 
-    <ul class="food-value">
-      <li class="food-value__item">
-        <p class="food-value__member">Kcal</p>
+    <ul class="food-values">
+      <li class="food-values__item">
+        <p class="food-values__value">320</p>
+        <p class="food-values__kind">Kcal</p>
       </li>
-      <li class="food-value__item">
-        <p class="food-value__member">Prote...</p>
+      <li class="food-values__item">
+        <p class="food-values__value">4g</p>
+        <p class="food-values__kind">Prote...</p>
       </li>
-      <li class="food-value__item">
-        <p class="food-value__member">Fats</p>
+      <li class="food-values__item">
+        <p class="food-values__value">8,2g</p>
+        <p class="food-values__kind">Fats</p>
       </li>
-      <li class="food-value__item">
-        <p class="food-value__member">Carbs</p>
+      <li class="food-values__item">
+        <p class="food-values__value">40,4g</p>
+        <p class="food-values__kind">Carbs</p>
       </li>
     </ul>
-    <h3 class="modal__ingredients-text">Ingredients</h3>
+
+    <h3 class="ingredients__subtitle">Ingredients</h3>
     <ul class="ingredients-list">
       <li class="ingredients-list__item">
-        <ul class="ingredients-member-list">
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">Milk</p>
-          </li>
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">100ml</p>
-          </li>
-        </ul>
+        <p class="ingredients-list__ingredient">Milk</p>
+        <p class="ingredients-list__amount">100ml</p>
       </li>
       <li class="ingredients-list__item">
-        <ul class="ingredients-member-list">
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">Belgian chocolate</p>
-          </li>
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">20g</p>
-          </li>
-        </ul>
+        <p class="ingredients-list__ingredient">Belgian chocolate</p>
+        <p class="ingredients-list__amount">20g</p>
       </li>
       <li class="ingredients-list__item">
-        <ul class="ingredients-member-list">
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">Cream</p>
-          </li>
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">150ml</p>
-          </li>
-        </ul>
+        <p class="ingredients-list__ingredient">Cream</p>
+        <p class="ingredients-list__amount">150ml</p>
       </li>
       <li class="ingredients-list__item">
-        <ul class="ingredients-member-list">
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">Cocoa powder</p>
-          </li>
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">30g</p>
-          </li>
-        </ul>
+        <p class="ingredients-list__ingredient">Cocoa powder</p>
+        <p class="ingredients-list__amount">30g</p>
       </li>
       <li class="ingredients-list__item">
-        <ul class="ingredients-member-list">
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">Sugar</p>
-          </li>
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">40g</p>
-          </li>
-        </ul>
+        <p class="ingredients-list__ingredient">Sugar</p>
+        <p class="ingredients-list__amount">40g</p>
       </li>
       <li class="ingredients-list__item">
-        <ul class="ingredients-member-list">
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">Vanilla sugar</p>
-          </li>
-          <li class="ingredients-member-list__item">
-            <p class="ingredients-member-list__text">10g</p>
-          </li>
-        </ul>
+        <p class="ingredients-list__ingredient">Vanilla sugar</p>
+        <p class="ingredients-list__amount">10g</p>
       </li>
     </ul>
+
     <form class="ingredients-form">
       <label for="dient-name"></label>
       <input
@@ -122,7 +92,6 @@
 
       <label for="dient-comment"></label>
       <textarea
-        type="textarea"
         name="dient-comment"
         id="dient-comment"
         class="ingredients-form__comment"
