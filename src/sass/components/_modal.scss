@@ -12,10 +12,6 @@
   border: 2px solid var(--brand-color);
   border-radius: 10px;
 
-  @media screen and (min-width: 480px) {
-    padding: 32px 60px;
-  }
-
   @media (min-width: 768px) {
     width: 568px;
     padding: 32px 40px;
@@ -95,6 +91,11 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .modal__text {
@@ -187,17 +188,5 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.21;
-  }
-}
-
-.modal__map {
-  max-width: 224px;
-  max-height: 199px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 480.1px) {
-    max-width: 448px;
-    max-height: 260px;
   }
 }
