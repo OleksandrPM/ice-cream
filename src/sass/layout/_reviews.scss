@@ -18,7 +18,6 @@
 
 /* The dots/bullets/indicators */
 .reviews__dot {
-  cursor: pointer;
   height: 12px;
   width: 12px;
   margin: 0 9px;
@@ -26,6 +25,8 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+
+  cursor: url(../images/header/cursor.png), auto;
 }
 
 .active,

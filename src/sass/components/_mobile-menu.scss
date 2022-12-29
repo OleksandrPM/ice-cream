@@ -50,7 +50,6 @@
   padding: 0;
   background-color: transparent;
   color: var(--button-text-inverse-color);
-  cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
@@ -60,9 +59,6 @@
 
 .menu-toggle--close {
   padding: 10px;
-  &:hover {
-    cursor: url(../images/header/cursor.png), auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -74,7 +70,6 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
   color: var(--brand-color);
-  cursor: url(../images/header/cursor.png), auto;
 }
 
 .mobile-menu {
@@ -109,7 +104,6 @@
     &:hover,
     &:focus {
       background-color: var(--button-hover-color);
-      cursor: url(../images/header/cursor.png), auto;
     }
     &:focus {
       color: var(--button-text-inverse-color);
@@ -136,7 +130,6 @@
     &:hover,
     &:focus {
       color: var(--main-text-color);
-      cursor: url(../images/header/cursor.png), auto;
     }
   }
   @media screen and (min-width: 768px) {

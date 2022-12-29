@@ -32,7 +32,6 @@
 
   &__logo {
     color: var(--brand-color);
-    cursor: url(../images/header/cursor.png), auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -58,7 +57,6 @@
       border: transparent;
       background-color: var(--brand-color);
       border-radius: 10px;
-      cursor: url(../images/header/cursor.png), auto;
       transition: background-color var(--normal-transition-duration)
           var(--normal-transition-timing-function),
         color var(--normal-transition-duration)
@@ -115,7 +113,6 @@
     &:hover,
     &:focus {
       color: var(--brand-color);
-      cursor: url(../images/header/cursor.png), auto;
     }
 
     @media screen and (min-width: 481px) {
