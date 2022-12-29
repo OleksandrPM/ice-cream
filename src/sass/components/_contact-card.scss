@@ -13,7 +13,6 @@
   @media screen and (min-width: 1200px) {
     max-width: 368px;
     padding: 40px;
-    cursor: url(../images/header/cursor.png), auto;
   }
 
   &__title {
@@ -58,7 +57,6 @@
     letter-spacing: 0.04em;
     color: var(--address-text-color);
     line-height: calc(22 / 12);
-    cursor: url(../images/header/cursor.png), auto;
 
     @media screen and (min-width: 768px) {
       line-height: calc(26 / 14);
@@ -115,7 +113,6 @@
 
     &--link {
       color: var(--main-text-color);
-      cursor: url(../images/header/cursor.png), auto;
     }
   }
 }

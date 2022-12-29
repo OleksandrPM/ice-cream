@@ -35,8 +35,6 @@ a {
   margin: 0;
 
   text-decoration: none;
-
-  cursor: pointer;
 }
 
 button {
@@ -46,10 +44,15 @@ button {
 
   font-family: var(--main-font-family);
   font-style: var(--main-font-style);
-
-  cursor: pointer;
 }
 
 textarea {
   resize: none;
+}
+
+a,
+button,
+input,
+textarea {
+  cursor: url(../images/header/cursor.png), auto;
 }

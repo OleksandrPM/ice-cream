@@ -5,7 +5,7 @@ lite-youtube {
   contain: content;
   background-position: center center;
   background-size: cover;
-  cursor: pointer;
+  cursor: url(../images/header/cursor.png), auto;
   max-width: 720px;
 }
 
@@ -47,7 +47,7 @@ lite-youtube > .lty-playbtn {
   width: 36px;
   height: 36px;
   position: absolute;
-  cursor: pointer;
+  cursor: url(../images/header/cursor.png), auto;
   transform: translate3d(-50%, -50%, 0);
   top: 50%;
   left: 50%;
