@@ -16,8 +16,19 @@
   }
 }
 
+.reviews__list {
+  position: relative;
+  display: flex;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* The dots/bullets/indicators */
-.dot {
+.reviews__dot {
   cursor: pointer;
   height: 12px;
   width: 12px;
