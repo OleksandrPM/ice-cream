@@ -1,0 +1,28 @@
+.location {
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.location__title {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.location__map {
+  overflow: hidden;
+  width: 224px;
+  height: 199px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+  }
+}

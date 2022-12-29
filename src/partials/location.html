@@ -1,15 +1,15 @@
 <div class="backdrop backdrop--is-hidden js-location">
-  <div class="modal locations">
+  <div class="modal location">
     <button class="modal__close-button js-location-close">
       <svg class="" width="20" height="20">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <p class="modal__title">Our Locations</p>
-    <div class="modal__map">
+    <h2 class="modal__title location__title">Our Locations</h2>
+    <div class="location__map">
       <picture>
         <source
-          media="(max-width: 480px)"
+          media="(max-width: 767.98px)"
           srcset="
             ./images/modal-location/map-s@1x.jpg 1x,
             ./images/modal-location/map-s@2x.jpg 2x
@@ -17,7 +17,7 @@
           type="image/jpg"
         />
         <source
-          media="(max-width: 480px)"
+          media="(max-width: 767.98px)"
           srcset="
             ./images/modal-location/map-s@1x.webp 1x,
             ./images/modal-location/map-s@2x.webp 2x
@@ -25,7 +25,7 @@
           type="image/webp"
         />
         <source
-          media="(min-width: 480.1px)"
+          media="(min-width: 768px)"
           srcset="
             ./images/modal-location/map-L@1x.jpg 1x,
             ./images/modal-location/map-L@2x.jpg 2x
@@ -33,7 +33,7 @@
           type="image/jpg"
         />
         <source
-          media="(min-width: 480.1px)"
+          media="(min-width: 768px)"
           srcset="
             ./images/modal-location/map-L@1x.webp 1x,
             ./images/modal-location/map-L@2x.webp 2x
@@ -48,11 +48,10 @@
       </picture>
     </div>
 
-    <a
-      class="modal__button modal__button--locations"
-      href="https://goo.gl/maps/Y92jL7G9hhWHcfbN6"
-      target="_blank"
-      ><span class="modal__button-text">Open map</span></a
-    >
+    <form action="https://goo.gl/maps/Y92jL7G9hhWHcfbN6" target="_blank">
+      <button type="submit" class="modal__button modal__button--locations">
+        <span class="modal__button-text">Open map</span>
+      </button>
+    </form>
   </div>
 </div>
