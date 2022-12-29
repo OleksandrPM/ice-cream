@@ -14,10 +14,6 @@
   border: 2px solid var(--brand-color);
   border-radius: 10px;
 
-  @media screen and (min-width: 480px) {
-    padding: 32px 60px;
-  }
-
   @media (min-width: 768px) {
     width: 568px;
     padding: 32px 40px;
@@ -143,14 +139,4 @@
   font-size: 12px;
   line-height: 15px;
   color: var(--main-text-color);
-}
-
-.modal__map {
-  max-width: 224px;
-  max-height: 199px;
-
-  @media screen and (min-width: 480.1px) {
-    max-width: 448px;
-    max-height: 260px;
-  }
 }

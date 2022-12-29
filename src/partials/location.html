@@ -25,7 +25,7 @@
           type="image/webp"
         />
         <source
-          media="(min-width: 480.1px)"
+          media="(min-width: 768px)"
           srcset="
             ./images/modal-location/map-L@1x.jpg 1x,
             ./images/modal-location/map-L@2x.jpg 2x
@@ -33,7 +33,7 @@
           type="image/jpg"
         />
         <source
-          media="(min-width: 480.1px)"
+          media="(min-width: 768px)"
           srcset="
             ./images/modal-location/map-L@1x.webp 1x,
             ./images/modal-location/map-L@2x.webp 2x
@@ -44,11 +44,8 @@
       </picture>
     </div>
 
-    <a
-      class="modal__button"
-      href="https://goo.gl/maps/Y92jL7G9hhWHcfbN6"
-      target="_blank"
-      ><span class="modal__button-text">Open map</span></a
-    >
+    <form action="https://goo.gl/maps/Y92jL7G9hhWHcfbN6" target="_blank" >
+      <button type="submit" class="modal__button" ><span class="modal__button-text">Open map</span></button>
+    </form>
   </div>
 </div>

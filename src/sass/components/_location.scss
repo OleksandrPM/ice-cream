@@ -1,0 +1,9 @@
+.modal__map {
+    max-width: 224px;
+    max-height: 199px;
+
+    @media screen and (min-width: 480.1px) {
+        max-width: 448px;
+        max-height: 260px;
+    }
+}
