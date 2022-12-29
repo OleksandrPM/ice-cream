@@ -34,6 +34,42 @@
   }
 }
 
+// Menu scroll
+// Modal scrollbar
+.menu-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+
+    @media screen and (min-width: 768px) {
+      width: 10px;
+    }
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2.5px;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 5px;
+    }
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--background-color);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--background-input-color);
+  }
+}
+
 .menu-container .menu-toggle {
   position: absolute;
   top: 20px;
